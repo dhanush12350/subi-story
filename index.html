@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Story I Never Finished — Subi</title>
+  <meta name="description" content="A personal story and confession to Subi — nostalgic, sincere, and respectful.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Star / Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Minimal Floating Navigation Indicator -->
+  <nav class="nav-indicator" id="nav-bar" aria-label="Story Chapter Navigation">
+    <a href="#intro" class="nav-link active" data-chapter="0">♥</a>
+    <span class="dot">•</span>
+    <a href="#chapter-01" class="nav-link" data-chapter="1">01</a>
+    <span class="dot">•</span>
+    <a href="#chapter-02" class="nav-link" data-chapter="2">02</a>
+    <span class="dot">•</span>
+    <a href="#chapter-03" class="nav-link" data-chapter="3">03</a>
+    <span class="dot">•</span>
+    <a href="#chapter-04" class="nav-link" data-chapter="4">04</a>
+    <span class="dot">•</span>
+    <a href="#chapter-05" class="nav-link" data-chapter="5">05</a>
+    <span class="dot">•</span>
+    <a href="#chapter-06" class="nav-link" data-chapter="6">06</a>
+    <span class="dot">•</span>
+    <a href="#chapter-07" class="nav-link" data-chapter="7">07</a>
+    <span class="dot">•</span>
+    <a href="#confession" class="nav-link" data-chapter="8">♥</a>
+  </nav>
+
+  <!-- Audio Toggle Control (Top-Right) -->
+  <div class="music-toggle-wrapper">
+    <button id="music-btn" class="music-btn" aria-label="Toggle Romantic Ambient Music">
+      <div class="music-icon">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </div>
+      <span id="music-text" class="music-text">Play Soundtrack</span>
+    </button>
+    <!-- Audio Tag targeting the uploaded romantic soundtrack -->
+    <audio id="bg-music" loop preload="auto">
+      <source src="assets/The Prelude for a Proposal - Masstamilan.MY.mp3" type="audio/mpeg">
+      <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- MAIN STORY WRAPPER -->
+  <main class="story-container">
+
+    <!-- LANDING SCREEN -->
+    <section id="intro" class="chapter-section intro-section">
+      <div class="glass-card intro-card fade-in">
+        <span class="chapter-badge">An Unfinished Memory</span>
+        <h1 class="intro-title">Hey, Subi…</h1>
+        <p class="intro-subtitle">Before you continue, I want to tell you a little story.</p>
+        <button id="start-btn" class="cta-button nav-btn-action" data-target="#chapter-01">
+          Start Our Story <span class="arrow">→</span>
+        </button>
+      </div>
+    </section>
+
+
+    <!-- CHAPTER 01 — THE FIRST TIME I SAW YOU -->
+    <section id="chapter-01" class="chapter-section chapter-01-bg">
+      <div class="chapter-bg-overlay" style="background-image: url('assets/school_ground.jpg');"></div>
+      <div class="glass-card chapter-card">
+        <header class="chapter-header">
+          <span class="chapter-number">CHAPTER 01</span>
+          <h2 class="chapter-title">It started during a PT period.</h2>
+        </header>
+        <div class="chapter-body">
+          <p class="reveal-text">It was just another day at school.</p>
+          <p class="reveal-text">During a PT period, I saw you playing with your friends.</p>
+          <p class="reveal-text">You were laughing and enjoying yourself.</p>
+          <p class="reveal-text">I don't know why, but that moment caught my attention.</p>
+          <p class="reveal-text highlight-quote">Maybe you didn't notice me then…</p>
+          <p class="reveal-text emphasis-text">but I noticed you.</p>
+        </div>
+        <div class="chapter-footer">
+          <button class="chapter-step-btn nav-btn-action" data-target="#chapter-02">And then… →</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CHAPTER 02 — I STARTED NOTICING YOU -->
+    <section id="chapter-02" class="chapter-section chapter-02-bg">
+      <div class="chapter-bg-overlay" style="background-image: url('assets/classroom.jpg');"></div>
+      <div class="glass-card chapter-card">
+        <header class="chapter-header">
+          <span class="chapter-number">CHAPTER 02</span>
+          <h2 class="chapter-title">Somehow, I kept noticing you.</h2>
+        </header>
+        <div class="chapter-body">
+          <p class="reveal-text">After that day, I started noticing you more often.</p>
+          <div class="memory-grid">
+            <div class="memory-chip"><span>In class.</span></div>
+            <div class="memory-chip"><span>Around school.</span></div>
+            <div class="memory-chip"><span>During ordinary moments.</span></div>
+          </div>
+          <p class="reveal-text">Even while you were writing an exam, I noticed you.</p>
+          <p class="reveal-text">I don't know exactly when it happened…</p>
+          <p class="reveal-text highlight-quote">but slowly,</p>
+          <p class="reveal-text emphasis-text">you became someone I looked for without even realizing it.</p>
+        </div>
+        <!-- School bell time motif artifact -->
+        <div class="time-motif">
+          <div class="clock-ring"></div>
+          <span class="time-label">Classroom Memory • School Days</span>
+        </div>
+        <div class="chapter-footer dual-buttons">
+          <button class="chapter-step-btn secondary-step nav-btn-action" data-target="#chapter-01">← Back</button>
+          <button class="chapter-step-btn nav-btn-action" data-target="#chapter-03">Next Chapter →</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CHAPTER 03 — THE MESSAGE -->
+    <section id="chapter-03" class="chapter-section chapter-03-bg">
+      <div class="glass-card chapter-card chat-chapter-card">
+        <header class="chapter-header">
+          <span class="chapter-number">CHAPTER 03</span>
+          <h2 class="chapter-title">Then something changed.</h2>
+        </header>
+        <div class="chapter-body">
+          <p class="reveal-text">After a long time, I watched a movie called</p>
+          <div class="movie-glow-badge">
+            <span class="movie-title">With Love</span>
+          </div>
+          <p class="reveal-text">And somehow, after watching it, I felt like texting you.</p>
+          <p class="reveal-text">So I did.</p>
+          <p class="reveal-text">One message became another…</p>
+          <p class="reveal-text highlight-quote">and eventually,</p>
+          <p class="reveal-text emphasis-text">we became classmates who actually talked.</p>
+        </div>
+
+        <!-- Animated Fictional Chat Interface -->
+        <div class="chat-container" id="chat-box">
+          <div class="chat-header">
+            <div class="avatar">S</div>
+            <div class="chat-info">
+              <span class="chat-name">Subi</span>
+              <span class="chat-status">Classmate & Friend</span>
+            </div>
+          </div>
+          <div class="chat-messages">
+            <div class="chat-bubble outgoing animate-bubble-1">
+              <span class="sender-label">Me</span>
+              <p class="message-content">Hi…</p>
+              <span class="timestamp">Evening</span>
+            </div>
+            <div class="chat-bubble incoming abstract-bubble animate-bubble-2">
+              <div class="blur-line line-1"></div>
+              <div class="blur-line line-2"></div>
+            </div>
+            <div class="chat-bubble outgoing abstract-bubble animate-bubble-3">
+              <div class="blur-line line-1"></div>
+            </div>
+            <div class="chat-bubble incoming abstract-bubble animate-bubble-4">
+              <div class="blur-line line-1"></div>
+              <div class="blur-line line-2"></div>
+              <div class="blur-line line-3"></div>
+            </div>
+          </div>
+          <div class="chat-caption">
+            <span>And that's where our conversations began.</span>
+          </div>
+        </div>
+
+        <div class="chapter-footer dual-buttons">
+          <button class="chapter-step-btn secondary-step nav-btn-action" data-target="#chapter-02">← Back</button>
+          <button class="chapter-step-btn nav-btn-action" data-target="#chapter-04">Next Chapter →</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CHAPTER 04 — YOU FIGURED IT OUT -->
+    <section id="chapter-04" class="chapter-section chapter-04-bg">
+      <div class="glass-card chapter-card truth-card">
+        <header class="chapter-header">
+          <span class="chapter-number">CHAPTER 04</span>
+          <h2 class="chapter-title">You already knew something was different.</h2>
+        </header>
+        <div class="chapter-body">
+          <p class="reveal-text">But you started having doubts.</p>
+          <p class="reveal-text">You kept asking me what was really going on.</p>
+          <p class="reveal-text">Somehow, you knew there was something I wasn't telling you.</p>
+          <p class="reveal-text">And eventually, you kept forcing me to say it.</p>
+          <p class="reveal-text">So I finally told you the truth.</p>
+          
+          <div class="confession-highlight">
+            <p class="bold-reveal">I loved you.</p>
+          </div>
+
+          <div class="pause-divider">
+            <span class="pause-dot"></span>
+            <span class="pause-dot"></span>
+            <span class="pause-dot"></span>
+          </div>
+
+          <div class="truth-subtle-reveal">
+            <p class="soft-sad-reveal">But you didn't accept it.</p>
+          </div>
+        </div>
+
+        <div class="chapter-footer dual-buttons">
+          <button class="chapter-step-btn secondary-step nav-btn-action" data-target="#chapter-03">← Back</button>
+          <button class="chapter-step-btn nav-btn-action" data-target="#chapter-05">Next Chapter →</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CHAPTER 05 — EVEN AFTER THAT -->
+    <section id="chapter-05" class="chapter-section chapter-05-bg">
+      <div class="glass-card chapter-card timeline-chapter-card">
+        <header class="chapter-header">
+          <span class="chapter-number">CHAPTER 05</span>
+          <h2 class="chapter-title">But we still talked.</h2>
+        </header>
+        <div class="chapter-body">
+          <p class="reveal-text">Even after you didn't accept my love,</p>
+          <p class="reveal-text">we still talked.</p>
+          
+          <div class="friendship-pills">
+            <span class="pill">Like classmates.</span>
+            <span class="pill">Like friends.</span>
+          </div>
+
+          <p class="reveal-text">Life continued normally.</p>
+          <p class="reveal-text">But for me… something had changed.</p>
+          <p class="reveal-text">I still had those feelings for you.</p>
+          <p class="reveal-text highlight-quote">I just didn't know if there would ever be a place for me in your heart.</p>
+        </div>
+
+        <!-- Horizontal Interactive Timeline -->
+        <div class="story-timeline-wrapper">
+          <div class="timeline-bar">
+            <div class="timeline-progress" id="timeline-progress-bar"></div>
+          </div>
+          <div class="timeline-nodes">
+            <div class="timeline-node" data-step="1">
+              <div class="node-circle">01</div>
+              <div class="node-content">
+                <span class="node-title">Saw You</span>
+                <span class="node-desc">PT Period</span>
+              </div>
+            </div>
+            <div class="timeline-node" data-step="2">
+              <div class="node-circle">02</div>
+              <div class="node-content">
+                <span class="node-title">Noticed You</span>
+                <span class="node-desc">In Class</span>
+              </div>
+            </div>
+            <div class="timeline-node" data-step="3">
+              <div class="node-circle">03</div>
+              <div class="node-content">
+                <span class="node-title">Texted You</span>
+                <span class="node-desc">After "With Love"</span>
+              </div>
+            </div>
+            <div class="timeline-node" data-step="4">
+              <div class="node-circle">04</div>
+              <div class="node-content">
+                <span class="node-title">Became Friends</span>
+                <span class="node-desc">Classmates</span>
+              </div>
+            </div>
+            <div class="timeline-node" data-step="5">
+              <div class="node-circle">05</div>
+              <div class="node-content">
+                <span class="node-title">Confessed</span>
+                <span class="node-desc">Honest Truth</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chapter-footer dual-buttons">
+          <button class="chapter-step-btn secondary-step nav-btn-action" data-target="#chapter-04">← Back</button>
+          <button class="chapter-step-btn nav-btn-action" data-target="#chapter-06">Next Chapter →</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CHAPTER 06 — THE ANSWER -->
+    <section id="chapter-06" class="chapter-section chapter-06-bg">
+      <div class="glass-card chapter-card minimal-card">
+        <header class="chapter-header">
+          <span class="chapter-number">CHAPTER 06</span>
+          <h2 class="chapter-title">One last question.</h2>
+        </header>
+        <div class="chapter-body minimal-body">
+          <p class="reveal-text date-context">About a week before everything changed,</p>
+          <p class="reveal-text">I finally asked you:</p>
+
+          <blockquote class="question-quote">
+            “Is there really no opportunity for me in this life?”
+          </blockquote>
+
+          <div class="silent-pause-space"></div>
+
+          <div class="answer-display">
+            <h3 class="answer-word">“No.”</h3>
+          </div>
+
+          <div class="silent-pause-space"></div>
+
+          <p class="reveal-text simple-ack">I understood.</p>
+
+          <p class="reveal-text respect-statement">And I respect that.</p>
+        </div>
+
+        <div class="chapter-footer dual-buttons center-footer">
+          <button class="chapter-step-btn secondary-step nav-btn-action" data-target="#chapter-05">← Back</button>
+          <button class="chapter-step-btn nav-btn-action" data-target="#chapter-07">Next Chapter →</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CHAPTER 07 — THE FEELING THAT REMAINED -->
+    <section id="chapter-07" class="chapter-section chapter-07-bg">
+      <div class="chapter-bg-overlay" style="background-image: url('assets/night_sky.jpg');"></div>
+      <div class="travelling-star-container">
+        <div class="glowing-star-particle" id="travelling-star"></div>
+      </div>
+      <div class="glass-card chapter-card night-card">
+        <header class="chapter-header">
+          <span class="chapter-number">CHAPTER 07</span>
+          <h2 class="chapter-title">But one feeling stayed.</h2>
+        </header>
+        <div class="chapter-body">
+          <p class="reveal-text">Even after everything,</p>
+          <p class="reveal-text">there was still a small feeling in my heart</p>
+          <p class="reveal-text highlight-quote">that never completely disappeared.</p>
+          
+          <div class="spacer-sm"></div>
+
+          <p class="reveal-text">I tried to let it go.</p>
+          <p class="reveal-text">I tried to tell myself that maybe it was time to move on.</p>
+
+          <div class="spacer-sm"></div>
+
+          <p class="reveal-text emphasis-text">But some feelings don't disappear</p>
+          <p class="reveal-text emphasis-subtext">just because we want them to.</p>
+        </div>
+
+        <div class="chapter-footer dual-buttons">
+          <button class="chapter-step-btn secondary-step nav-btn-action" data-target="#chapter-06">← Back</button>
+          <button class="chapter-step-btn highlight-step nav-btn-action" data-target="#confession">Final Confession →</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FINAL CONFESSION (EMOTIONAL CENTERPIECE) -->
+    <section id="confession" class="chapter-section confession-section">
+      <div class="confession-bg-stars"></div>
+      <div class="glass-card confession-card">
+        
+        <div class="confession-salutation">
+          <h2 class="subi-name">Subi…</h2>
+          <p class="subi-subtitle">This is my last and final confession to you.</p>
+        </div>
+
+        <div class="confession-content">
+          <div class="confession-block block-1">
+            <p>I'm not here to change your answer.</p>
+            <p>I'm not asking you to feel something you don't.</p>
+            <p>I'm not asking you for anything.</p>
+            <p class="standout-line">I just wanted to tell you one last time<br>what you mean to me.</p>
+          </div>
+
+          <div class="confession-divider">✦</div>
+
+          <div class="confession-block block-2">
+            <p>From the day I first noticed you laughing with your friends during PT…</p>
+            <p>to all those little moments in class…</p>
+            <p>to the messages…</p>
+            <p>to our friendship…</p>
+            <p>to the confession…</p>
+            <p>and even your ‘no’…</p>
+          </div>
+
+          <div class="confession-block block-3 story-part-highlight">
+            <h3>You became a beautiful part of my story.</h3>
+          </div>
+
+          <div class="confession-block block-4">
+            <p>And before I finally let this feeling rest,</p>
+            <p>I just wanted you to know one last time…</p>
+          </div>
+
+          <div class="confession-impact-box">
+            <h2 class="impact-text primary-impact">I loved you.</h2>
+            <h3 class="impact-text secondary-impact">I still have a little love for you.</h3>
+            <p class="impact-text tertiary-impact">And I wanted you to know.</p>
+          </div>
+        </div>
+
+        <!-- RESPECTFUL ENDING -->
+        <div class="respectful-ending-box">
+          <div class="respect-divider"></div>
+          <p class="respect-line">Whatever your answer is, I'll respect it.</p>
+          <p class="respect-subline">You don't owe me an answer. You don't owe me anything.</p>
+          <p class="honest-line">I just wanted to be honest with my heart, one last time.</p>
+          <p class="final-thankyou">Thank you for being a part of my story, Subi. 🤍</p>
+        </div>
+
+        <div class="chapter-footer dual-buttons center-footer" style="margin-top: 36px;">
+          <button class="chapter-step-btn secondary-step nav-btn-action" data-target="#chapter-07">← Back</button>
+          <button class="chapter-step-btn highlight-step nav-btn-action" data-target="#final-screen">Final Screen →</button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- FINAL SCREEN -->
+    <section id="final-screen" class="chapter-section final-screen-section">
+      <div class="final-container glass-card">
+        <div class="final-quote-box">
+          <p class="final-line-1">“From someone who first noticed you during a PT period…”</p>
+          <div class="final-pause-space"></div>
+          <p class="final-line-2">“…and never completely stopped noticing you.”</p>
+        </div>
+        
+        <div class="signature-box">
+          <span class="sig-dash">—</span>
+          <span class="sig-name">Dhanush</span>
+        </div>
+
+        <div class="glowing-heart-wrapper">
+          <div class="soft-heart-glow">🤍</div>
+          <span class="peace-caption">A Peaceful Memory</span>
+        </div>
+
+        <div class="chapter-footer" style="margin-top: 36px;">
+          <button class="chapter-step-btn secondary-step nav-btn-action" data-target="#intro">↺ Read Again from Start</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
